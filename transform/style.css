@@ -4,3 +4,30 @@
   width: 50vh;
   font-size: 2rem;
 }
+.rotate-x {
+  background-color: chocolate;
+  transform: rotateX(180deg);
+}
+.rotate-y {
+  background-color: crimson;
+  transform: rotateY(180deg);
+}
+.rotate {
+  background-color: yellowgreen;
+  transform: rotate(-30deg);
+}
+.scale-x {
+  background-color: cornflowerblue;
+  transform: scaleX(1);
+}
+.scale-y {
+  background-color: darkorange;
+  transform: scaleY(2);
+}
+
+.scale {
+  background-color: deeppink;
+  &:hover {
+    transform: scale(1.1);
+  }
+}

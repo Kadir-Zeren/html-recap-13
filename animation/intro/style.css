@@ -5,19 +5,19 @@
   display: flex;
   margin: auto;
   animation-name: background;
-  animation-duration: 3s;
+  animation-duration: 9s;
   /* animation-iteration-count: 3; */
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
-@keyframes background {
+/* @keyframes background {
   from {
     background-color: coral;
   }
   to {
     background-color: darkkhaki;
   }
-}
+} */
 @keyframes background {
   0% {
     background-color: coral;
@@ -30,5 +30,36 @@
   }
   100% {
     background-color: darkkhaki;
+  }
+}
+.outer {
+  background-color: rgb(114, 29, 46);
+  width: 500px;
+  height: 500px;
+  display: flex;
+  margin: auto;
+}
+h2 {
+  text-align: center;
+}
+.inner {
+  background-color: gray;
+  width: 50%;
+  height: 50%;
+  animation: travel 20s infinite alternate-reverse;
+}
+@keyframes travel {
+  0% {
+    transform: translateX(0);
+  }
+  33% {
+    transform: translateY(100%);
+  }
+  66% {
+    transform: translate(100%, 100%);
+  }
+  100% {
+    transform: translateX(100%);
+    border-radius: 50%;
   }
 }
